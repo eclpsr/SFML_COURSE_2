@@ -43,7 +43,9 @@ class Player{
 
 	// Speed in pixels per second
 	float m_Speed;
+
 public:
+
 	Player();
 	void spawn(IntRect arena, Vector2f resolution, int tileSize);
 

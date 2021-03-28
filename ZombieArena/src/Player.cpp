@@ -2,6 +2,7 @@
 #include <cmath>
 
 Player::Player(){
+
 	m_Speed = START_SPEED;
 	m_Health = START_HEALTH;
 	m_MaxHealth = START_HEALTH;
@@ -31,11 +32,10 @@ void Player::spawn(IntRect arena, Vector2f resolution, int tileSize){
 
 	// Store the resolution for future use
 	m_Resolution.x = resolution.x;
-
 	m_Resolution.y = resolution.y;
 }
 
-void Player::resetPlayerStats(){
+ void Player::resetPlayerStats(){
 	m_Speed = START_SPEED;
 	m_Health = START_HEALTH;
 	m_MaxHealth = START_HEALTH;
